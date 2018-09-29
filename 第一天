@@ -1,0 +1,16 @@
+//创建一个无模式对话框
+Chooser= new JColorChooser();
+dialog= JColorChooser.createDialog(
+    parent,
+    "Background Color",
+    false /*not modal*/,
+    chooser,
+    new ActionListener()  //OK button listener
+      {
+       public void actionPerformed(ActionEvent event)
+         {
+           setBackground(chooser.getColor();
+         }
+      },
+      null  /* no Cancel button listener */
+    
